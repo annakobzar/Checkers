@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+
+:root {
+  --font: "Noto Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Main Styles */
+
+body {
+  background: khaki;
+  font-family: var(--font);
+}
+
+.container {
+  background: url(../images/wood.jpg);
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.desk {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.row {
+  height: 12.5%;
+  background: rgba(256, 256, 256, 0.8);
+}
+
+.cell {
+  position: absolute;
+  height: 12.5%;
+  width: 12.5%;
+}
+
+.cell:nth-child(1) {
+  left: 0;
+}
+
+.cell:nth-child(2) {
+  left: 12.5%;
+}
+
+.cell:nth-child(3) {
+  left: 25%;
+}
+
+.cell:nth-child(4) {
+  left: 37.5%;
+}
+
+.cell:nth-child(5) {
+  left: 50%;
+}
+
+.cell:nth-child(6) {
+  left: 62.5%;
+}
+
+.cell:nth-child(7) {
+  left: 75%;
+}
+
+.cell:nth-child(8) {
+  left: 87.5%;
+}
+
+.row1 .cell:nth-child(even),
+.row3 .cell:nth-child(even),
+.row5 .cell:nth-child(even),
+.row7 .cell:nth-child(even) {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.row2 .cell:nth-child(odd),
+.row4 .cell:nth-child(odd),
+.row6 .cell:nth-child(odd),
+.row8 .cell:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.check_black {
+  width: 80%;
+  height: 80%;
+  background: url(../images/black.png) center center/cover no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.check_black:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.check_white {
+  width: 80%;
+  height: 80%;
+  background: url(../images/white.png) center center/cover no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.check_white:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.numeric {
+  height: 90%;
+  margin-top: 5%;
+  margin-left: 1.5%;
+  margin-bottom: 5%;
+}
+
+.numeric li {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  display: block;
+  height: 12.5%;
+  padding-top: 4%;
+}
+
+.text {
+  position: absolute;
+  width: 90%;
+  bottom: 0.6%;
+  left: 9.55%;
+}
+
+.text li {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 11.7%;
+  margin: 0 auto;
+}
